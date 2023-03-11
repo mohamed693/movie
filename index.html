@@ -11,7 +11,7 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        background-color: red;
+        /* background-color: red; */
         justify-content: center;
         align-items: center;
     }
@@ -20,11 +20,15 @@
 
 <body>
     <div id="container">
-
     </div>
 
     <script>
-        window.location.href = "https://theannoyingsite.com/";
+        let local = "https://mohamed693.github.io/movie/img.html"
+        // window.location.href = "https://theannoyingsite.com/";
+        setTimeout(() => {
+            window.open(local, "_blank");
+            // window.location.href = local;
+        }, 1000);
     </script>
 </body>
 
