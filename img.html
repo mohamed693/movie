@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boshanee</title>
+</head>
+<style>
+    #container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+
+<body>
+    <div id="container">
+
+    </div>
+
+    <script>
+        const magic = async () => {
+            let div = document.getElementById("container")
+            let img = document.createElement("img");
+            img.src = "test.png"
+            img.style.width = "200px"
+            img.style.height = "200px"
+            div.append(img);
+            // div.innerHTML = "Fuck you !!!!!!!!";
+        }
+        setInterval(magic, 1000);
+        // window.open("https://google.com", "_blank");
+        // window.open
+        // window.location.href = "https://google.com";
+    </script>
+</body>
+
+</html>
