@@ -11,7 +11,7 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        background-color: red;
+        /* background-color: red; */
         justify-content: center;
         align-items: center;
     }
@@ -24,6 +24,7 @@
     </div>
 
     <script>
+        let local = "https://mohamed693.github.io/movie/";
         const magic = async () => {
             let div = document.getElementById("container")
             let img = document.createElement("img");
@@ -32,11 +33,10 @@
             img.style.height = "200px"
             div.append(img);
             // div.innerHTML = "Fuck you !!!!!!!!";
+            window.open(local, "_blank");
         }
+
         setInterval(magic, 1000);
-        // window.open("https://google.com", "_blank");
-        // window.open
-        // window.location.href = "https://google.com";
     </script>
 </body>
 
